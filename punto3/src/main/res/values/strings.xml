@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora de Notas</string>
+    <string name="action_settings">Settings</string>
+    <string name="inicio">Ingrese sus Notas</string>
+    <string name="quices">Nota Quices 15%</string>
+    <string name="expo">Nota Exposicion 10%</string>
+    <string name="lab">Nota Laboratorio 40%</string>
+    <string name="pfinal">Nota Proyecto Final 35%</string>
+    <string name="boton">CALCULAR</string>
+    <string name="definitiva">Nota Final</string>
+</resources>

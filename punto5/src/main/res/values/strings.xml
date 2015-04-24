@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Datos Personales</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">Nombre:</string>
+    <string name="enombre">Escriba su Nombre</string>
+    <string name="correo">Correo:</string>
+    <string name="ecorreo">Escriba su Dir de correo</string>
+    <string name="telefono">Telefono:</string>
+    <string name="etelefono">Escriba su Telefono</string>
+    <string name="fem">Femenino</string>
+    <string name="mas">Masculino</string>
+    <string name="snombre">Nombre</string>
+    <string name="scorreo">Correo</string>
+    <string name="stelefono">Teléfono</string>
+    <string name="ssexo">Sexo</string>
+    <string name="sciudad">Ciudad</string>
+    <string name="shobbie">Hobbies</string>
+    <string name="snacimiento">Fecha de Nacimientoe</string>
+    <string name="deporte">Deporte</string>
+    <string name="cine">Cine</string>
+    <string name="videojuegos">Videojuegos</string>
+    <string name="lectura">Lectura</string>
+    <string name="boton">OK</string>
+
+
+    <string-array name="ciudades">
+        <item>Leticia</item>
+        <item>Medellín</item>
+        <item>Arauca</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Tunja</item>
+        <item>Manizales</item>
+        <item>Florencia</item>
+        <item>Yopal</item>
+        <item>Popayan</item>
+        <item>Valledupar</item>
+        <item>Quibdó</item>
+        <item>Montería</item>
+        <item>Bogotá</item>
+        <item>Puerto Inírida</item>
+        <item>San José del Guaviare</item>
+        <item>Neiva</item>
+        <item>Riohacha</item>
+        <item>Santa Marta</item>
+        <item>Villavicencio</item>
+        <item>San Juan de Pasto</item>
+        <item>Cúcuta</item>
+        <item>Mocoa</item>
+        <item>Armenia</item>
+        <item>Pereira</item>
+        <item>San Andrés</item>
+        <item>Bucaramanga</item>
+        <item>Sincelejo</item>
+        <item>Ibagué</item>
+        <item>Cali</item>
+        <item>Mitú</item>
+        <item>Puerto Carreño</item>
+        </string-array>
+</resources>

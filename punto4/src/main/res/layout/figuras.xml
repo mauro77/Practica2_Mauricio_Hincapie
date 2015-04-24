@@ -1,0 +1,163 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inicio"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:id="@+id/tNombre"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lado1"
+            android:textSize="20dp"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/L1"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lado2"
+            android:textSize="20dp"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/L2"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/radio"
+            android:textSize="20dp"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/R"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/altura"
+            android:textSize="20dp"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/A"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/base"
+            android:textSize="20dp"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/B"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        >
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <RadioButton android:id="@+id/cuadrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cuadrado"
+                android:textSize="25dp"
+                android:onClick="onRadioButtonClicked"
+                />
+            <RadioButton
+                android:id="@+id/rectangulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rectangulo"
+                android:textSize="25dp"
+                android:onClick="onRadioButtonClicked"
+                />
+            <RadioButton
+                android:id="@+id/circulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/circulo"
+                android:textSize="25dp"
+                android:onClick="onRadioButtonClicked"
+                />
+            <RadioButton
+                android:id="@+id/triangulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/triangulo"
+                android:textSize="25dp"
+                android:onClick="onRadioButtonClicked"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:id="@+id/boton"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resultado"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/result"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

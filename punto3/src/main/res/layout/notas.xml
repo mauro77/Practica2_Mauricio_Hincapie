@@ -1,0 +1,111 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightsteelblue"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inicio"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:id="@+id/tNombre"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/quices"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:inputType="numberDecimal"
+
+            android:layout_weight="1"
+            android:id="@+id/N1"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/expo"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/N2"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lab"
+            android:textSize="25dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/N3"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pfinal"
+            android:textSize="25dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:id="@+id/N4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/boton"
+            android:textSize="20dp"
+            android:id="@+id/boton"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/definitiva"
+            android:layout_gravity="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:id="@+id/Nfinal"/>
+    </LinearLayout>
+</LinearLayout>
