@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <string name="num1">Number 1</string>
+    <string name="num2">Number 2</string>
+    <string name="boton">Operater</string>
+    <string name="suma">Add</string>
+    <string name="resta">Substract</string>
+    <string name="multiplicacion">Multiply</string>
+    <string name="division">Divide</string>
+    <string name="tresultado">Result</string>
+    <string name="resultado">Result</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Grades Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="inicio">Add Your Grades</string>
+    <string name="quices">Quizz Grade 15%</string>
+    <string name="expo">Exposition Grade 10%</string>
+    <string name="lab">Laboratory Grade 40%</string>
+    <string name="pfinal">Final Project Grade 35%</string>
+    <string name="boton">CALCULATE</string>
+    <string name="definitiva">Final Grade</string>
+</resources>

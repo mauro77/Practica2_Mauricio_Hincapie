@@ -3,38 +3,36 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    style="@style/estilo2"
+    android:background="@color/black"
 
     >
-<!--asddaaarr-->
+
     <LinearLayout
 
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1"
+        android:layout_weight="4"
         >
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/num1"
-            android:textSize="20dp"
+            android:textSize="18dp"
             style="@style/estilo2"
             android:textColorHint="@color/white"
             android:inputType="numberDecimal"
-            android:layout_weight="1"
             android:id="@+id/N1"/>
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/num2"
-            android:textSize="20dp"
+            android:textSize="18dp"
             style="@style/estilo2"
             android:textColorHint="@color/white"
             android:inputType="numberDecimal"
-            android:layout_weight="1"
             android:id="@+id/N2"/>
     </LinearLayout>
 
@@ -44,7 +42,7 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="0.8"
+        android:layout_weight="3"
         android:gravity="center"
         >
         <RadioGroup
@@ -52,13 +50,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
+            style="@style/estilo2"
             >
             <RadioButton android:id="@+id/suma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/suma"
-                style="@style/estilo2"
                 android:textSize="25dp"
+                style="@style/estilo2"
                 android:onClick="onRadioButtonClicked"
                 />
             <RadioButton
@@ -66,8 +65,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/resta"
-                style="@style/estilo2"
                 android:textSize="25dp"
+                style="@style/estilo2"
                 android:onClick="onRadioButtonClicked"
                 />
             <RadioButton
@@ -93,77 +92,45 @@
 
     <LinearLayout
 
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1"
+        android:layout_weight="4"
+        android:layout_gravity="center"
         >
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/boton"
+                 android:textSize="25dp"
+                 android:id="@+id/boton"
+                 android:textColor="@color/orange"
 
+                 />
 
         <LinearLayout
 
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="3"
-            android:weightSum="1">
-
-
-            <LinearLayout
-
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="124dp"
-                android:gravity="center"
-                android:layout_weight="1.31">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/boton"
-                    android:textSize="25dp"
-                    android:id="@+id/boton"
-                    android:textColor="@color/orange"
-
-                    />
-            </LinearLayout>
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            >
 
         </LinearLayout>
 
-    
-    </LinearLayout>
-
-
-    <LinearLayout
-
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        >
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/tresultado"
             android:inputType="numberDecimal"
             android:textSize="30dp"
-            android:textColor="@color/yellow"
-            android:textColorHint="@color/white"
-            android:gravity="center"
-            android:id="@+id/tres"
-            />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:textSize="30dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:gravity="center"
+            style="@style/estilo2"
+            android:layout_weight="1"
             android:id="@+id/res"
             />
 
+      </LinearLayout>
 
-    </LinearLayout>
 
 </LinearLayout>
