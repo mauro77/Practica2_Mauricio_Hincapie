@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/lightsteelblue"
+    style="@style/estilo2"
 
     >
 
@@ -20,6 +20,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/num1"
             android:textSize="20dp"
+            style="@style/estilo2"
+            android:textColorHint="@color/white"
             android:inputType="numberDecimal"
             android:layout_weight="1"
             android:id="@+id/N1"/>
@@ -29,6 +31,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/num2"
             android:textSize="20dp"
+            style="@style/estilo2"
+            android:textColorHint="@color/white"
             android:inputType="numberDecimal"
             android:layout_weight="1"
             android:id="@+id/N2"/>
@@ -53,6 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/suma"
+                style="@style/estilo2"
                 android:textSize="25dp"
                 android:onClick="onRadioButtonClicked"
                 />
@@ -61,6 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/resta"
+                style="@style/estilo2"
                 android:textSize="25dp"
                 android:onClick="onRadioButtonClicked"
                 />
@@ -70,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/multiplicacion"
                 android:textSize="25dp"
+                style="@style/estilo2"
                 android:onClick="onRadioButtonClicked"
                 />
             <RadioButton
@@ -78,6 +85,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/division"
                 android:textSize="25dp"
+                style="@style/estilo2"
                 android:onClick="onRadioButtonClicked"
                 />
         </RadioGroup>
@@ -115,6 +123,7 @@
                     android:text="@string/boton"
                     android:textSize="25dp"
                     android:id="@+id/boton"
+                    android:textColor="@color/orange"
 
                     />
             </LinearLayout>
@@ -138,6 +147,18 @@
             android:text="@string/tresultado"
             android:inputType="numberDecimal"
             android:textSize="30dp"
+            android:textColor="@color/yellow"
+            android:textColorHint="@color/white"
+            android:gravity="center"
+            android:id="@+id/tres"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:gravity="center"
             android:id="@+id/res"
             />

@@ -15,6 +15,7 @@ public class MainActivity extends ActionBarActivity {
 
     int flag=0;
     double a=0;
+    TextView area;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
         final EditText radio= (EditText) findViewById(R.id.R);
         final EditText altura = (EditText) findViewById(R.id.A);
         final EditText base= (EditText) findViewById(R.id.B);
-        final TextView area = (TextView) findViewById(R.id.result);
+        area = (TextView) findViewById(R.id.result);
         Button boton = (Button) findViewById(R.id.boton);
 
 
@@ -79,9 +80,20 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+    }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("guardado", area.getText().toString());
 
+        super.onSaveInstanceState(outState);
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        area.setText(savedInstanceState.getString("guardado"));
     }
 
 

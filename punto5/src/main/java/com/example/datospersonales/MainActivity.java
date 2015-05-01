@@ -26,6 +26,14 @@ public class MainActivity extends ActionBarActivity {
 
         static int mes=0, dia=0,ano=0;
         int flagsex=0,flagh=0;
+         TextView sName;
+         TextView sMail;
+         TextView sTel;
+         TextView sSex;
+         TextView sCity;
+         TextView sPasa;
+         TextView sBirth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,13 +42,13 @@ public class MainActivity extends ActionBarActivity {
         final EditText eNombre = (EditText) findViewById(R.id.eNombre);
         final EditText eCorreo = (EditText) findViewById(R.id.eCorreo);
         final EditText eTelefono = (EditText) findViewById(R.id.eTel);
-        final TextView sName = (TextView) findViewById(R.id.snombre);
-        final TextView sMail = (TextView) findViewById(R.id.scorreo);
-        final TextView sTel = (TextView) findViewById(R.id.stelefono);
-        final TextView sSex = (TextView) findViewById(R.id.ssexo);
-        final TextView sCity = (TextView) findViewById(R.id.sciudad);
-        final TextView sPasa = (TextView) findViewById(R.id.shobbie);
-        final TextView sBirth = (TextView) findViewById(R.id.snacimiento);
+        sName = (TextView) findViewById(R.id.snombre);
+        sMail = (TextView) findViewById(R.id.scorreo);
+        sTel = (TextView) findViewById(R.id.stelefono);
+        sSex = (TextView) findViewById(R.id.ssexo);
+        sCity = (TextView) findViewById(R.id.sciudad);
+        sPasa = (TextView) findViewById(R.id.shobbie);
+        sBirth = (TextView) findViewById(R.id.snacimiento);
         final CheckBox deporte=(CheckBox) findViewById(R.id.deporte);
         final CheckBox cine=(CheckBox) findViewById(R.id.cine);
         final CheckBox video=(CheckBox) findViewById(R.id.videojuegos);
@@ -100,6 +108,34 @@ public class MainActivity extends ActionBarActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
+
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("nombre", sName.getText().toString());
+        outState.putString("mail", sMail.getText().toString());
+        outState.putString("tel", sTel.getText().toString());
+        outState.putString("sex", sSex.getText().toString());
+        outState.putString("city", sCity.getText().toString());
+        outState.putString("pasa", sPasa.getText().toString());
+        outState.putString("birth", sBirth.getText().toString());
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle saved) {
+        super.onRestoreInstanceState(saved);
+
+        sName.setText(saved.getString("nombre"));
+        sMail.setText(saved.getString("mail"));
+        sTel.setText(saved.getString("tel"));
+        sSex.setText(saved.getString("sex"));
+        sCity.setText(saved.getString("city"));
+        sPasa.setText(saved.getString("pasa"));
+        sBirth.setText(saved.getString("birth"));
 
 
     }

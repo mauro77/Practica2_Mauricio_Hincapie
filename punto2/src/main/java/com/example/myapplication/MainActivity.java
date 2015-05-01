@@ -17,18 +17,17 @@ public class MainActivity extends ActionBarActivity {
 
     int flag =0;
     double num1,num2,res;
+    TextView resultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculadora);
 
-
         final EditText numero1 = (EditText) findViewById(R.id.N1);
         final EditText numero2 = (EditText) findViewById(R.id.N2);
-        final TextView resultado = (TextView) findViewById(R.id.res);
+        resultado = (TextView) findViewById(R.id.res);
         Button boton = (Button) findViewById(R.id.boton);
-
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,6 +99,19 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("guardado", resultado.getText().toString());
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        resultado.setText(savedInstanceState.getString("guardado"));
+    }
 
 
     public void onRadioButtonClicked(View view) {
@@ -133,12 +145,6 @@ public class MainActivity extends ActionBarActivity {
 
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

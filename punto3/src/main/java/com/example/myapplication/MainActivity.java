@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
     int flag1=0,flag2=0,flag3=0,flag4=0;
     double n1,n2,n3,n4,c1,c2,c3,c4;
+    TextView definitiva;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
         final EditText Nota2 = (EditText) findViewById(R.id.N2);
         final EditText Nota3 = (EditText) findViewById(R.id.N3);
         final EditText Nota4 = (EditText) findViewById(R.id.N4);
-        final TextView definitiva=(TextView)findViewById(R.id.Nfinal);
+        definitiva=(TextView)findViewById(R.id.Nfinal);
         Button boton = (Button) findViewById(R.id.boton);
 
         boton.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +89,20 @@ public class MainActivity extends ActionBarActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("guardado", definitiva.getText().toString());
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        definitiva.setText(savedInstanceState.getString("guardado"));
     }
 
 

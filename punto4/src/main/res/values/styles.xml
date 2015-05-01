@@ -5,4 +5,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="estilo4" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/lightslategray</item>
+        <item name="android:textColor">@color/midnightblue</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
 </resources>

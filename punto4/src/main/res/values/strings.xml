@@ -3,7 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="inicio">Ingrese las Medidads</string>
+    <string name="inicio">Ingrese las Medidas</string>
     <string name="lado1">Lado 1 Rectángulo, cuadrado</string>
     <string name="lado2">Lado 2 rectángulo</string>
     <string name="radio">Radio del Circulo</string>
@@ -15,4 +15,5 @@
     <string name="triangulo">Triangulo</string>
     <string name="boton">CALCULAR</string>
     <string name="resultado">resultado</string>
+    <string name="operaciones">Operaciones</string>
 </resources>

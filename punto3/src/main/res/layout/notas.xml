@@ -3,7 +3,8 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/lightsteelblue"
+    style="@style/estilo1"
+
     >
 
     <LinearLayout
@@ -11,15 +12,16 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="2"
+        style="@style/estilo1"
         >
 
         <TextView
+            style="@style/estilo1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/inicio"
             android:gravity="center"
             android:textSize="30dp"
-            android:textColor="@color/black"
             android:id="@+id/tNombre"/>
 
         <EditText
@@ -27,32 +29,30 @@
             android:layout_height="wrap_content"
             android:hint="@string/quices"
             android:textColorHint="@color/black"
-            android:textColor="@color/black"
             android:textSize="25dp"
             android:inputType="numberDecimal"
-
             android:layout_weight="1"
             android:id="@+id/N1"
             />
 
         <EditText
+            style="@style/estilo1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/expo"
             android:textColorHint="@color/black"
-            android:textColor="@color/black"
             android:textSize="25dp"
             android:inputType="numberDecimal"
             android:layout_weight="1"
             android:id="@+id/N2"
             />
         <EditText
+            style="@style/estilo1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/lab"
             android:textSize="25dp"
             android:textColorHint="@color/black"
-            android:textColor="@color/black"
             android:inputType="numberDecimal"
             android:layout_weight="1"
             android:id="@+id/N3"
@@ -64,7 +64,7 @@
             android:hint="@string/pfinal"
             android:textSize="25dp"
             android:textColorHint="@color/black"
-            android:textColor="@color/black"
+            style="@style/estilo1"
             android:inputType="numberDecimal"
             android:layout_weight="1"
             android:id="@+id/N4"
@@ -82,6 +82,7 @@
         >
 
         <Button
+
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/boton"
@@ -99,12 +100,12 @@
         >
 
         <TextView
+            style="@style/estilo1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/definitiva"
             android:layout_gravity="center"
             android:textColorHint="@color/black"
-            android:textColor="@color/black"
             android:textSize="30dp"
             android:id="@+id/Nfinal"/>
     </LinearLayout>

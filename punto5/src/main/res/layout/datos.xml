@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightsteelblue"
+    style="@style/estilo5"
 
     >
 
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/ssexo"
                 android:textSize="15dp"
-                android:textColor="@color/red"
+                android:textColor="@color/black" />
                 android:layout_weight="0.25"/>
 
             <RadioGroup
@@ -118,6 +118,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/fem"
                     android:textSize="15dp"
+                    style="@style/estilo5"
+
                     android:onClick="onRadioButtonClicked"
                     />
                 <RadioButton
@@ -126,6 +128,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/mas"
                     android:textSize="15dp"
+                    style="@style/estilo5"
                     android:onClick="onRadioButtonClicked"
                     />
             </RadioGroup>
@@ -144,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/sciudad"
                 android:textSize="15dp"
-                android:textColor="@color/red"
+                android:textColor="@color/black" />
                 android:layout_weight="0.53"
                 android:layout_gravity="center_horizontal" />
 
@@ -182,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/shobbie"
                 android:textSize="15dp"
-                android:textColor="@color/red" />
+                android:textColor="@color/black" />
 
             <CheckBox
                 android:id="@+id/deporte"
@@ -190,6 +193,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/deporte"
                 android:textSize="15dp"
+                style="@style/estilo5"
                 android:onClick="onCheckboxClicked"
                 />
             <CheckBox
@@ -198,6 +202,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cine"
                 android:textSize="15dp"
+                style="@style/estilo5"
                 android:onClick="onCheckboxClicked"
                 />
             <CheckBox
@@ -205,6 +210,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/videojuegos"
+                style="@style/estilo5"
                 android:onClick="onCheckboxClicked"
                 />
             <CheckBox
@@ -213,6 +219,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/lectura"
                 android:textSize="15dp"
+                style="@style/estilo5"
                 android:onClick="onCheckboxClicked"
                 />
         </LinearLayout>
@@ -230,12 +237,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/snacimiento"
                 android:textSize="15dp"
-                android:textColor="@color/red" />
+                android:textColor="@color/black" /> />
 
             <DatePicker
                 android:layout_width="wrap_content"
                 android:layout_height="124dp"
                 android:id="@+id/fecha"
+                android:background="@color/gray"
+                android:scrollbarStyle="outsideOverlay"
                 android:calendarViewShown="false"
                 style="@style/Widget.AppCompat.Button.Small"
                 android:layout_weight="0.14">
@@ -244,94 +253,117 @@
 
     </LinearLayout>
 
-    <GridLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.1"
-        android:layout_gravity="left"
+        android:layout_gravity="center"
         >
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
 
-        <Button
-            android:layout_width="68dp"
-            android:layout_height="33dp"
-            android:text="@string/boton"
-            android:id="@+id/boton"
-            android:textSize="10dp"
-            android:textColor="@color/red"
-            android:layout_row="0"
-            android:layout_column="7"
-            android:onClick=""
-            />
+            <Button
+                android:layout_width="68dp"
+                android:layout_height="33dp"
+                android:text="@string/boton"
+                android:id="@+id/boton"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_row="0"
+                android:layout_column="7"
+                android:onClick=""
+                />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/snombre"
-            android:textSize="15dp"
-            android:id="@+id/snombre"
-            android:layout_row="1"
-            android:layout_column="8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/snombre"
+                android:textSize="15dp"
+                android:id="@+id/snombre"
+                android:layout_row="1"
+                android:layout_column="8" />
 
-        <TextView
-            android:layout_width="117dp"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:text="@string/ssexo"
-            android:id="@+id/ssexo"
-            android:layout_row="1"
-            android:layout_column="11"
-            android:onClick="showDatePickerDialog"
-            />
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/ssexo"
+                android:id="@+id/ssexo"
+                android:layout_row="1"
+                android:layout_column="11"
+                android:onClick="showDatePickerDialog"
+                />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/scorreo"
-            android:textSize="15dp"
-            android:id="@+id/scorreo"
-            android:layout_row="2"
-            android:layout_column="8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scorreo"
+                android:textSize="15dp"
+                android:id="@+id/scorreo"
+                android:layout_row="2"
+                android:layout_column="8" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:text="@string/sciudad"
-            android:id="@+id/sciudad"
-            android:layout_row="2"
-            android:layout_column="11" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:text="@string/snacimiento"
-            android:id="@+id/snacimiento"
-            android:layout_row="3"
-            android:layout_column="8" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:text="@string/stelefono"
-            android:id="@+id/stelefono"
-            android:layout_row="3"
-            android:layout_column="11" />
 
-        <TextView
-            android:layout_width="179dp"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:text="@string/shobbie"
-            android:id="@+id/shobbie"
-            android:layout_row="4"
-            android:layout_column="8"
-            android:layout_columnSpan="3" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
 
-    </GridLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/sciudad"
+                android:id="@+id/sciudad"
+                android:layout_row="2"
+                android:layout_column="11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/snacimiento"
+                android:id="@+id/snacimiento"
+                android:layout_row="3"
+                android:layout_column="8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/stelefono"
+                android:id="@+id/stelefono"
+                android:layout_row="3"
+                android:layout_column="11" />
+
+            <TextView
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/shobbie"
+                android:id="@+id/shobbie"
+                android:layout_row="4"
+                android:layout_column="8"
+                android:layout_columnSpan="3" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 
